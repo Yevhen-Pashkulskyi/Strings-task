@@ -17,4 +17,7 @@ public class Model {
         return word.replace('b', 'o');
     }
 
+    public String[] getWords() {
+        return words;
+    }
 }
