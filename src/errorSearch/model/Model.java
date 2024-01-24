@@ -3,8 +3,8 @@ package errorSearch.model;
 public class Model {
     private String[] words;
 
-    public Model(String[] words) {
-        this.words = words;
+    public Model() {
+        this.words = new String[]{"brange", "plum", "tomato", "onibn", "grape"};
     }
 
     public void wordsCorrection() {
