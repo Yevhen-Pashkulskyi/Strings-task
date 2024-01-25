@@ -7,6 +7,7 @@ public class Model {
         this.words = new String[]{"brange", "plum", "tomato", "onibn", "grape"};
     }
 
+    //в цьому методі я виправляю слова
     public void wordsCorrection() {
         for (int i = 0; i < words.length; i++) {
             words[i] = wordCorrection(words[i]);
