@@ -17,7 +17,7 @@ public class Model {
         }
     }
 
-    public static String[] getWords() {
+    public String[] getWords() {
         return words;
     }
 }
