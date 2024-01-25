@@ -6,7 +6,7 @@ public class View {
     //якщо ні тоді текст не совподіння
     public void print(String name, int count) {
         if (count > 0) {
-            System.out.println("Ім'я: " + name + " співпадає:" + count);
+            System.out.println("Ім'я: " + name + " співпадає: " + count);
         } else {
             System.out.println("Такого імені немає в списку!");
         }

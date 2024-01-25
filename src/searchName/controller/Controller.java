@@ -14,7 +14,7 @@ public class Controller {
         this.view = view;
     }
 
-    public void process(Model model, View view) {
+    public void process() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введіть ім'я пошуку в спіску: ");
         String name = scanner.nextLine();
