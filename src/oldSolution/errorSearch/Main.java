@@ -1,8 +1,8 @@
-package errorSearch;
+package oldSolution.errorSearch;
 
-import errorSearch.controller.Controller;
-import errorSearch.model.Model;
-import errorSearch.view.View;
+import oldSolution.errorSearch.controller.Controller;
+import oldSolution.errorSearch.model.Model;
+import oldSolution.errorSearch.view.View;
 
 public class Main {
     public static void main(String[] args) {

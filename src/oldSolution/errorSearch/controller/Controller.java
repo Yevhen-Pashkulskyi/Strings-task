@@ -1,7 +1,7 @@
-package errorSearch.controller;
+package oldSolution.errorSearch.controller;
 
-import errorSearch.model.Model;
-import errorSearch.view.View;
+import oldSolution.errorSearch.model.Model;
+import oldSolution.errorSearch.view.View;
 
 public class Controller {
     private Model model;

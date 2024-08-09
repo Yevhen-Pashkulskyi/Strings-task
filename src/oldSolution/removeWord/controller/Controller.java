@@ -1,7 +1,7 @@
-package removeWord.controller;
+package oldSolution.removeWord.controller;
 
-import removeWord.model.Model;
-import removeWord.view.View;
+import oldSolution.removeWord.model.Model;
+import oldSolution.removeWord.view.View;
 
 public class Controller {
     private Model model;

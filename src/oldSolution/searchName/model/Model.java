@@ -1,4 +1,4 @@
-package searchName.model;
+package oldSolution.searchName.model;
 
 public class Model {
     private static String[] names;

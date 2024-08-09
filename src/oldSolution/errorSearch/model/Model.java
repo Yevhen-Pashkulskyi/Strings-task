@@ -1,4 +1,4 @@
-package errorSearch.model;
+package oldSolution.errorSearch.model;
 
 public class Model {
     private String[] words;

@@ -1,4 +1,4 @@
-package searchName.view;
+package oldSolution.searchName.view;
 
 public class View {
     //цей метод печатоє результат, якщо conter нарахував >0

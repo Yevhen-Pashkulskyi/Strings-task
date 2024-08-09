@@ -1,7 +1,7 @@
-package searchName.controller;
+package oldSolution.searchName.controller;
 
-import searchName.view.View;
-import searchName.model.Model;
+import oldSolution.searchName.view.View;
+import oldSolution.searchName.model.Model;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package removeWord.model;
+package oldSolution.removeWord.model;
 
 public class Model {
     private static String[] words;

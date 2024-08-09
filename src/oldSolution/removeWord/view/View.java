@@ -1,4 +1,4 @@
-package removeWord.view;
+package oldSolution.removeWord.view;
 
 public class View {
     private static int numbering;

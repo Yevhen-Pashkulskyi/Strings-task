@@ -1,4 +1,4 @@
-package errorSearch.view;
+package oldSolution.errorSearch.view;
 
 public class View {
 //    private static int numbering = 1;

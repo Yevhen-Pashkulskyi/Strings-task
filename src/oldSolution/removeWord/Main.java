@@ -1,8 +1,8 @@
-package removeWord;
+package oldSolution.removeWord;
 
-import removeWord.controller.Controller;
-import removeWord.model.Model;
-import removeWord.view.View;
+import oldSolution.removeWord.controller.Controller;
+import oldSolution.removeWord.model.Model;
+import oldSolution.removeWord.view.View;
 
 public class Main {
     public static void main(String[] args) {
