@@ -4,13 +4,16 @@ import java.util.Scanner;
 
 public class View {
 
-    public String[] enterData() {
+    public String[] enterData(int amountOfData) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter value: ");
-        String data1 = sc.nextLine();
-        System.out.print("Enter value: ");
-        String data2 = sc.nextLine();
-        return new String[]{data1, data2};
+        String[] data = new String[amountOfData];
+        int counter = 0;
+        do {
+            System.out.print("Enter the name product or name Person: ");
+            data[counter] = sc.nextLine();
+            counter++;
+        } while (counter < data.length);
+        return data;
     }
 
     public void output(String[] output) {

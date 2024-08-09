@@ -3,11 +3,14 @@ package newSolution.controller;
 import newSolution.model.Model;
 import newSolution.view.View;
 
+import java.util.Scanner;
+
 public class AppController {
     public void run(){
         Model model = new Model();
         View view = new View();
-        view.output(model.searchData(view.enterData()));
+        Scanner scanner = new Scanner(System.in);
+        view.output(model.searchData(view.enterData(scanner.nextInt())));
     }
 
 }
