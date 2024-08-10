@@ -11,4 +11,12 @@ public class Model {
         }
         return arr;
     }
+    public String[] replaceAll(String[] oldData, String search, String replacement) {
+        String[] newData = new String[oldData.length];
+        int counter = 0;
+        for (String s : oldData) {
+            newData[counter] = s.replaceAll(replacement, search);
+            counter++;
+        }return newData;
+    }
 }
