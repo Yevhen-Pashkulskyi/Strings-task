@@ -10,6 +10,7 @@ public class AppController {
         Model model = new Model();
         View view = new View();
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter amount of data: ");
         view.output(model.searchData(view.enterData(scanner.nextInt())));
     }
 
