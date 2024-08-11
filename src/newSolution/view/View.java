@@ -27,4 +27,9 @@ public class View {
             System.out.println(counter + ") " + s);
         }
     }
+
+
+    public String toString(String output) {
+        return output;
+    }
 }
