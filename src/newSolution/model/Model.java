@@ -24,7 +24,7 @@ public class Model {
 
     public String deleteValue(String[] oldData, String delVal) {
         StringBuilder newData = new StringBuilder();
-        int counter = 0;
+//        int counter = 0;
         for (String s : oldData) {
             if (s.equals(delVal)) {
                 s = "";
