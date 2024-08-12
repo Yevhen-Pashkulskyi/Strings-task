@@ -28,8 +28,7 @@ public class View {
         }
     }
 
-
-    public String toString(String output) {
-        return output;
+    public void print(String output) {
+        System.out.println(output);
     }
 }

@@ -22,15 +22,16 @@ public class Model {
         return newData;
     }
 
-    public String deleteValue(String[] oldData, String delVal) {
-        StringBuilder newData = new StringBuilder();
-//        int counter = 0;
+    public String[] deleteValue(String[] oldData, String delVal) {
+        String[] newData = new String[6];
+        int counter = 0;
         for (String s : oldData) {
             if (s.equals(delVal)) {
-                s = "";
+               s = s.replace(oldData[counter], "");
             }
-            newData.append(s);
+            newData[counter] = s;
+            counter++;
         }
-        return newData.toString();
+        return newData;
     }
 }

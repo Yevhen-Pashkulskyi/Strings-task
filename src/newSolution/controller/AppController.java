@@ -13,8 +13,9 @@ public class AppController {
 //        System.out.println("Enter amount of data: ");
 //        view.output(model.searchData(view.enterData(scanner.nextInt())));
         String[] arrProduct = new String[]{"brange", "plum", "tomato", "onibn", "grape"};
-        view.output(model.replaceAll(arrProduct,"b","o"));
-        view.toString(model.deleteValue(arrProduct,"orange"));
+//        view.output(model.replaceAll(arrProduct,"b","o"));
+        arrProduct = new String[]{"orange", "plum", "tomato", "onion", "grape", "onion"};
+        view.output(model.deleteValue(arrProduct,"onion"));
     }
 
 }
