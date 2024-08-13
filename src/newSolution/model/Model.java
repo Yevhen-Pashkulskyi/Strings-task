@@ -1,6 +1,8 @@
 package newSolution.model;
 
 
+import java.util.Arrays;
+
 public class Model {
     private String[] arr;
 
@@ -27,17 +29,28 @@ public class Model {
         for (int i = 0; i < delVal.length(); i++) {
             sizeDelVal++;
         }
-//        String separatorWord = " ";
-        String newData;
+        int start;
+        int end;
+        StringBuilder newData = new StringBuilder(oldData);
 
-        return newData;
+        for (int i = 0; i < oldData.length(); i++) {
+            if (oldData.indexOf(delVal) > 1) {
+                start = oldData.indexOf(delVal);
+                end = start + sizeDelVal;
+                oldData = String.valueOf(newData.delete(start, end));
+            } else {
+                break;
+            }
+        }
+        return newData.toString();
     }
-    //перетворення в строку
 
+    //перетворення в строку
     public String conversionIntoTerm(String[] oldData) {
         StringBuilder newSb = new StringBuilder();
         for (int i = 0; i < oldData.length; i++) {
-           newSb.append(oldData[i]).append(" ");
-        }return newSb.toString();
+            newSb.append(oldData[i]).append(" ");
+        }
+        return newSb.toString();
     }
 }

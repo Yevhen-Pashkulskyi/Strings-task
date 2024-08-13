@@ -16,7 +16,9 @@ public class AppController {
 //        view.output(model.replaceAll(arrProduct,"b","o"));
         arrProduct = new String[]{"orange", "plum", "tomato", "onion", "grape", "onion"};
 //        view.output(model.deleteValue(arrProduct,"onion"));
-        view.print(model.conversionIntoTerm(arrProduct));
+
+        String input = model.conversionIntoTerm(arrProduct);
+        view.printColumn(model.deleteValue(input, "onion" + " "));
     }
 
 }
