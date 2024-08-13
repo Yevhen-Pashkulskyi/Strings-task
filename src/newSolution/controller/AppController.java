@@ -18,7 +18,7 @@ public class AppController {
 //        view.output(model.deleteValue(arrProduct,"onion"));
 
         String input = model.conversionIntoTerm(arrProduct);
-        view.printColumn(model.deleteValue(input, "onion" + " "));
+        view.printColumn(model.delVal(input, "onion"));
     }
 
 }

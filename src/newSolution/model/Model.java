@@ -1,8 +1,6 @@
 package newSolution.model;
 
 
-import java.util.Arrays;
-
 public class Model {
     private String[] arr;
 
@@ -24,18 +22,18 @@ public class Model {
         return newData;
     }
 
-    public String deleteValue(String oldData, String delVal) {
+    public String delVal(String oldData, String val) {
         int sizeDelVal = 0;
-        for (int i = 0; i < delVal.length(); i++) {
+        for (int i = 0; i < val.length(); i++) {
             sizeDelVal++;
         }
+
         int start;
         int end;
         StringBuilder newData = new StringBuilder(oldData);
-
         for (int i = 0; i < oldData.length(); i++) {
-            if (oldData.indexOf(delVal) > 1) {
-                start = oldData.indexOf(delVal);
+            if (oldData.indexOf(val) > 1) {
+                start = oldData.indexOf(val);
                 end = start + sizeDelVal;
                 oldData = String.valueOf(newData.delete(start, end));
             } else {
@@ -48,8 +46,8 @@ public class Model {
     //перетворення в строку
     public String conversionIntoTerm(String[] oldData) {
         StringBuilder newSb = new StringBuilder();
-        for (int i = 0; i < oldData.length; i++) {
-            newSb.append(oldData[i]).append(" ");
+        for (String s : oldData) {
+            newSb.append(s).append("\n");
         }
         return newSb.toString();
     }
