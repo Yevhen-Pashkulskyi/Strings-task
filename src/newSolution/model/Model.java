@@ -22,16 +22,22 @@ public class Model {
         return newData;
     }
 
-    public String[] deleteValue(String[] oldData, String delVal) {
-        String[] newData = new String[6];
-        int counter = 0;
-        for (String s : oldData) {
-            if (s.equals(delVal)) {
-               s = s.replace(oldData[counter], "");
-            }
-            newData[counter] = s;
-            counter++;
+    public String deleteValue(String oldData, String delVal) {
+        int sizeDelVal = 0;
+        for (int i = 0; i < delVal.length(); i++) {
+            sizeDelVal++;
         }
+//        String separatorWord = " ";
+        String newData;
+
         return newData;
+    }
+    //перетворення в строку
+
+    public String conversionIntoTerm(String[] oldData) {
+        StringBuilder newSb = new StringBuilder();
+        for (int i = 0; i < oldData.length; i++) {
+           newSb.append(oldData[i]).append(" ");
+        }return newSb.toString();
     }
 }
