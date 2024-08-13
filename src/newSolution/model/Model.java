@@ -51,4 +51,10 @@ public class Model {
         }
         return newSb.toString();
     }
+    public String[] delWords(String[] value, String word) {
+        StringBuilder newSb = new StringBuilder();
+        for (int i = 0; i < value.length; i++) {
+
+        }
+    }
 }

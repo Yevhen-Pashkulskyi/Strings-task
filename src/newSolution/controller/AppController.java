@@ -3,6 +3,7 @@ package newSolution.controller;
 import newSolution.model.Model;
 import newSolution.view.View;
 
+import javax.xml.transform.Source;
 import java.util.Scanner;
 
 public class AppController {
@@ -10,15 +11,15 @@ public class AppController {
         Model model = new Model();
         View view = new View();
         Scanner scanner = new Scanner(System.in);
-//        System.out.println("Enter amount of data: ");
-//        view.output(model.searchData(view.enterData(scanner.nextInt())));
-        String[] arrProduct = new String[]{"brange", "plum", "tomato", "onibn", "grape"};
-//        view.output(model.replaceAll(arrProduct,"b","o"));
-        arrProduct = new String[]{"orange", "plum", "tomato", "onion", "grape", "onion"};
-//        view.output(model.deleteValue(arrProduct,"onion"));
+        String[] task1 = {"brange", "plum", "tomato", "onibn", "grape"};
+        String[] task2 = {"orange", "plum", "tomato", "onion", "grape", "onion"};
+        String[] task3 = {"Bob", "Alice", "Tom", "Lucy", "Bob", "Lisa"};
 
-        String input = model.conversionIntoTerm(arrProduct);
-        view.printColumn(model.delVal(input, "onion"));
+        view.outputArray(model.replaceAll(task1, "b","o"));
+        System.out.print("\nЯке слово потрібно видалити з цього списку: \n" + String.join(", ", task2)
+                + "\nВведіть слово:" );
+        String delWord = scanner.nextLine();
+
     }
 
 }
