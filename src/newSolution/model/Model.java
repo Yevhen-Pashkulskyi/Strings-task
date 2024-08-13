@@ -4,14 +4,6 @@ package newSolution.model;
 public class Model {
     private String[] arr;
 
-//    public String[] getData(String data) {
-//        arr = new String[data.length];
-//        for (int i = 0; i < data.length; i++) {
-//            arr[i] = data[i];
-//        }
-//        return arr;
-//    }
-
     public String[] replaceAll(String[] oldData, String replacement, String search) {
         String[] newData = new String[oldData.length];
         int counter = 0;
@@ -20,6 +12,30 @@ public class Model {
             counter++;
         }
         return newData;
+    }
+    //TODO зробити цей метод вірно ↓
+    public String[] delWords(String[] value, String word) {
+        StringBuilder newSb = new StringBuilder();
+        for (int i = 0; i < value.length; i++) {
+            if (value[i].equals(word)) {
+                newSb.delete(0, newSb.length());
+            }
+        }
+        return newSb.toString().split(word);
+    }
+
+    public void searchWords(String[] value, String word) {
+        int counter = 0;
+        for (int i = 0; i < value.length; i++) {
+            if (value[i].equals(word)) {
+                counter++;
+            }
+        }
+        if (counter == 0) {
+            System.out.print("\nТакого імені немає: " + word);
+        } else {
+            System.out.printf("\nІм'я %s є в списку!\nКількість: %d", word, counter);
+        }
     }
 
     public String delVal(String oldData, String val) {
@@ -50,11 +66,5 @@ public class Model {
             newSb.append(s).append("\n");
         }
         return newSb.toString();
-    }
-    public String[] delWords(String[] value, String word) {
-        StringBuilder newSb = new StringBuilder();
-        for (int i = 0; i < value.length; i++) {
-
-        }
     }
 }
