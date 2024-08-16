@@ -24,8 +24,8 @@ public class Model {
 
     public void searchWords(String[] value, String word) {
         int counter = 0;
-        for (int i = 0; i < value.length; i++) {
-            if (value[i].equals(word)) {
+        for (String s : value) {
+            if (s.equals(word)) {
                 counter++;
             }
         }
